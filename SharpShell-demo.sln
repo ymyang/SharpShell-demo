@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpShell-demo", "SharpShell-demo\SharpShell-demo.csproj", "{EA1A4EEC-14A1-48D1-B835-2E448BB7FD60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Data.Sqlite", "Microsoft.Data.Sqlite\Microsoft.Data.Sqlite.csproj", "{F8C64067-2F82-4A69-BB90-582DF0B0E480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpShell", "SharpShell\SharpShell.csproj", "{B5D5F670-BFBA-4D09-91C6-74BB12B7EDD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyContextMenu", "MyContextMenu\MyContextMenu.csproj", "{9C247D41-841E-46BA-9252-FC44CE948F96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyModifiedIconOverlayHandler", "MyModifiedIconOverlayHandler\MyModifiedIconOverlayHandler.csproj", "{37672588-6825-49D6-934A-F3FBFD65FFB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNormalIconOverlayHandler", "MyNormalIconOverlayHandler\MyNormalIconOverlayHandler.csproj", "{DA563AF6-8618-484A-9DCB-D3CBD8452E94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyUnversionedIconOverlayHandler", "MyUnversionedIconOverlayHandler\MyUnversionedIconOverlayHandler.csproj", "{58E1DCC1-B219-457B-934C-0578B6E252A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA1A4EEC-14A1-48D1-B835-2E448BB7FD60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1A4EEC-14A1-48D1-B835-2E448BB7FD60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1A4EEC-14A1-48D1-B835-2E448BB7FD60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1A4EEC-14A1-48D1-B835-2E448BB7FD60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8C64067-2F82-4A69-BB90-582DF0B0E480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8C64067-2F82-4A69-BB90-582DF0B0E480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8C64067-2F82-4A69-BB90-582DF0B0E480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8C64067-2F82-4A69-BB90-582DF0B0E480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5D5F670-BFBA-4D09-91C6-74BB12B7EDD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5D5F670-BFBA-4D09-91C6-74BB12B7EDD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5D5F670-BFBA-4D09-91C6-74BB12B7EDD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5D5F670-BFBA-4D09-91C6-74BB12B7EDD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C247D41-841E-46BA-9252-FC44CE948F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C247D41-841E-46BA-9252-FC44CE948F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C247D41-841E-46BA-9252-FC44CE948F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C247D41-841E-46BA-9252-FC44CE948F96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37672588-6825-49D6-934A-F3FBFD65FFB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37672588-6825-49D6-934A-F3FBFD65FFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37672588-6825-49D6-934A-F3FBFD65FFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37672588-6825-49D6-934A-F3FBFD65FFB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA563AF6-8618-484A-9DCB-D3CBD8452E94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA563AF6-8618-484A-9DCB-D3CBD8452E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA563AF6-8618-484A-9DCB-D3CBD8452E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA563AF6-8618-484A-9DCB-D3CBD8452E94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58E1DCC1-B219-457B-934C-0578B6E252A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E1DCC1-B219-457B-934C-0578B6E252A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E1DCC1-B219-457B-934C-0578B6E252A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E1DCC1-B219-457B-934C-0578B6E252A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
