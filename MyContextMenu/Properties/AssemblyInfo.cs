@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("MyContextMenu")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("YLIYUN")]
+[assembly: AssemblyCompany("Microsoft")]
 [assembly: AssemblyProduct("MyContextMenu")]
-[assembly: AssemblyCopyright("Copyright © YLIYUN 2015")]
+[assembly: AssemblyCopyright("Copyright © Microsoft 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("9c247d41-841e-46ba-9252-fc44ce948f96")]
+[assembly: Guid("7239c7ff-217b-405b-90ec-7c34478af271")]
 
 // 程序集的版本信息由下列四个值组成: 
 //
