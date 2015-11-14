@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Data.Sqlite", "Mi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpShell", "SharpShell\SharpShell.csproj", "{B5D5F670-BFBA-4D09-91C6-74BB12B7EDD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyContextMenu", "MyContextMenu\MyContextMenu.csproj", "{9C247D41-841E-46BA-9252-FC44CE948F96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyContextMenu", "MyContextMenu\MyContextMenu.csproj", "{7239C7FF-217B-405B-90EC-7C34478AF271}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyModifiedIconOverlayHandler", "MyModifiedIconOverlayHandler\MyModifiedIconOverlayHandler.csproj", "{37672588-6825-49D6-934A-F3FBFD65FFB9}"
 EndProject
@@ -35,10 +35,10 @@ Global
 		{B5D5F670-BFBA-4D09-91C6-74BB12B7EDD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5D5F670-BFBA-4D09-91C6-74BB12B7EDD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5D5F670-BFBA-4D09-91C6-74BB12B7EDD4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9C247D41-841E-46BA-9252-FC44CE948F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9C247D41-841E-46BA-9252-FC44CE948F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C247D41-841E-46BA-9252-FC44CE948F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9C247D41-841E-46BA-9252-FC44CE948F96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7239C7FF-217B-405B-90EC-7C34478AF271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7239C7FF-217B-405B-90EC-7C34478AF271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7239C7FF-217B-405B-90EC-7C34478AF271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7239C7FF-217B-405B-90EC-7C34478AF271}.Release|Any CPU.Build.0 = Release|Any CPU
 		{37672588-6825-49D6-934A-F3FBFD65FFB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{37672588-6825-49D6-934A-F3FBFD65FFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37672588-6825-49D6-934A-F3FBFD65FFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
