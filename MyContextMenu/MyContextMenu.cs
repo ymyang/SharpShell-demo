@@ -62,10 +62,10 @@ namespace MyContextMenu
                         foreach (var filePath in SelectedItemPaths)
                         {
                             //  Count the lines.
-                            builder.Append(filePath).Append(":");
+                            builder.Append(filePath).Append("{;}");
                         }
 
-                        builder.Remove(builder.Length - 1, 1);
+                        builder.Remove(builder.Length - 3, 3);
 
                         Process proc = new Process();
                         proc.StartInfo.CreateNoWindow = true;
