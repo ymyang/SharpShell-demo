@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyUnversionedIconOverlayHan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyIgnoredIconOverlayHandler", "MyIgnoredIconOverlayHandler\MyIgnoredIconOverlayHandler.csproj", "{F93A2CDB-983A-45F8-B946-987A680E7267}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDirectoryContextMenu", "MyDirectoryContextMenu\MyDirectoryContextMenu.csproj", "{1F040C67-C0C9-4713-872A-B8A4B6E96C84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{F93A2CDB-983A-45F8-B946-987A680E7267}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F93A2CDB-983A-45F8-B946-987A680E7267}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F93A2CDB-983A-45F8-B946-987A680E7267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F040C67-C0C9-4713-872A-B8A4B6E96C84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F040C67-C0C9-4713-872A-B8A4B6E96C84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F040C67-C0C9-4713-872A-B8A4B6E96C84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F040C67-C0C9-4713-872A-B8A4B6E96C84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
