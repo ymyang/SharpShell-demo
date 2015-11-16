@@ -13,6 +13,7 @@ namespace MyContextMenu
 {
     [ComVisible(true)]
     [COMServerAssociation(AssociationType.AllFiles)]
+    [COMServerAssociation(AssociationType.Directory)]
     public class MyContextMenu : SharpContextMenu
     {
         protected override bool CanShowMenu()
