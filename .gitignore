@@ -9,6 +9,12 @@ Microsoft.Data.Sqlite/obj
 MyContextMenu/bin
 MyContextMenu/obj
 
+MyDirectoryContextMenu/bin
+MyDirectoryContextMenu/obj
+
+MyIgnoredIconOverlayHandler/bin
+MyIgnoredIconOverlayHandler/obj
+
 MyModifiedIconOverlayHandler/bin
 MyModifiedIconOverlayHandler/obj
 
