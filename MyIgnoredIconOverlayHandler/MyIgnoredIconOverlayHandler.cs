@@ -1,5 +1,9 @@
 ﻿using System;
 using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 
 using SharpShell.Interop;
@@ -7,11 +11,12 @@ using SharpShell.SharpIconOverlayHandler;
 
 using Microsoft.Data.Sqlite;
 
-namespace MyUnversionedIconOverlayHandler
+namespace MyIgnoredIconOverlayHandler
 {
     [ComVisible(true)]
-    public class MyUnversionedIconOverlayHandler : SharpIconOverlayHandler
+    public class MyIgnoredIconOverlayHandler : SharpIconOverlayHandler
     {
+
         protected override bool CanShowOverlay(string path, FILE_ATTRIBUTE attributes)
         {
             //  Return true if the file is read only, meaning we'll show the overlay.
@@ -53,7 +58,7 @@ namespace MyUnversionedIconOverlayHandler
                         }
                         else
                         {
-                            return true;
+                            return isTmpFile(path);
                         }
                     }
                     else
@@ -70,12 +75,24 @@ namespace MyUnversionedIconOverlayHandler
 
         protected override System.Drawing.Icon GetOverlayIcon()
         {
-            return Properties.Resources.UnversionedIcon;
+            return Properties.Resources.IgnoredIcon;
         }
 
         protected override int GetPriority()
         {
-            return 4;
+            return 3;
+        }
+
+        private bool isTmpFile(string path)
+        {
+            string REG_TMP_FILE = @"^(.*)\.(yli)\.(part)$";
+            string REG_OFFICE_TMP_FILE = @"(^(~\$).*\.(doc|docx|ppt|pptx|xls|xlsx)$)|(^~.*\.(tmp)$)";
+            string name = Path.GetFileName(path);
+            if (Regex.IsMatch(name, REG_TMP_FILE) || Regex.IsMatch(name, REG_OFFICE_TMP_FILE))
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
