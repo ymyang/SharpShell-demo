@@ -1,20 +1,15 @@
 // Copyright (c) .NET Foundation. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
-#if NET45 || DNX451 || DNXCORE50
+#if NET451
 
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.InteropServices;
+using Microsoft.Extensions.PlatformAbstractions;
 
-#if DNX451 || DNXCORE50
-using Microsoft.Dnx.Runtime;
-using Microsoft.Dnx.Runtime.Infrastructure;
-using Microsoft.Framework.DependencyInjection;
-#endif
-
-namespace Microsoft.Framework.Internal
+namespace Microsoft.Data.Sqlite.Utilities
 {
     internal static class NativeLibraryLoader
     {
@@ -34,41 +29,9 @@ namespace Microsoft.Framework.Internal
 
         public static bool TryLoad(string dllName)
         {
-            string applicationBase;
-#if NET45
-            applicationBase = AppDomain.CurrentDomain.BaseDirectory;
-#elif DNX451 || DNXCORE50
-            var serviceProvider = CallContextServiceLocator
-                .Locator
-                .ServiceProvider;
-
-            var runtimeEnv = serviceProvider
-                .GetRequiredService<IRuntimeEnvironment>();
-
-            if(runtimeEnv.OperatingSystem != "Windows")
-            {
-                return true;
-            }
-
-            applicationBase = serviceProvider
-                .GetRequiredService<IApplicationEnvironment>()
-                .ApplicationBasePath;
-#else
-            applicationBase = AppContext.BaseDirectory;
-#endif
-
-            return TryLoad(dllName, applicationBase);
-        }
-
-        public static bool TryLoad(string dllName, string applicationBase)
-        {
             if (dllName == null)
             {
                 throw new ArgumentNullException(nameof(dllName));
-            }
-            if (applicationBase == null)
-            {
-                throw new ArgumentNullException(nameof(applicationBase));
             }
             if (IsLoaded(dllName))
             {
@@ -79,7 +42,9 @@ namespace Microsoft.Framework.Internal
             {
                 dllName += ".dll";
             }
-            
+
+            var applicationBase = AppDomain.CurrentDomain.BaseDirectory;
+
             if (File.Exists(Path.Combine(applicationBase, dllName)))
             {
                 return true;
@@ -104,7 +69,7 @@ namespace Microsoft.Framework.Internal
             {
                 throw new ArgumentNullException(nameof(dllName));
             }
-            if (IsMono())
+            if (IsDNX() || IsMono())
             {
                 return true;
             }
@@ -114,6 +79,9 @@ namespace Microsoft.Framework.Internal
 
             return handle != IntPtr.Zero;
         }
+
+        private static bool IsDNX()
+            => PlatformServices.Default?.Application.RuntimeFramework.Identifier == "DNX";
 
         private static bool IsMono() => Type.GetType("Mono.Runtime") != null;
 
