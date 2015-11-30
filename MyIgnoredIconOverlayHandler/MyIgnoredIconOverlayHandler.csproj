@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MyIgnoredIconOverlayHandler</RootNamespace>
     <AssemblyName>MyIgnoredIconOverlayHandler</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -35,6 +35,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\dll\System.Data.SQLite.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
@@ -53,10 +56,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Microsoft.Data.Sqlite\Microsoft.Data.Sqlite.csproj">
-      <Project>{f8c64067-2f82-4a69-bb90-582df0b0e480}</Project>
-      <Name>Microsoft.Data.Sqlite</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SharpShell\SharpShell.csproj">
       <Project>{b5d5f670-bfba-4d09-91c6-74bb12b7edd4}</Project>
       <Name>SharpShell</Name>
