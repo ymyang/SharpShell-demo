@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using SharpShell.Interop;
 using SharpShell.SharpIconOverlayHandler;
 
-using System.Data.SQLite;
+using Microsoft.Data.Sqlite;
 
 namespace MyModifiedIconOverlayHandler
 {
@@ -19,15 +19,15 @@ namespace MyModifiedIconOverlayHandler
             {
                 string app = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
                 string dbPath = Path.Combine(app, @"yliyun\db\file_status.db");
-                using (SQLiteConnection conn = new SQLiteConnection("Data Source =" + dbPath))
+                using (SqliteConnection conn = new SqliteConnection("Data Source =" + dbPath))
                 {
                     string rootDir = @"D:\一粒云盘";
 
                     conn.Open();
 
-                    SQLiteCommand cmd1 = new SQLiteCommand("SELECT syncRoot FROM yliyun_conf", conn);
+                    SqliteCommand cmd1 = new SqliteCommand("SELECT syncRoot FROM yliyun_conf", conn);
 
-                    SQLiteDataReader reader1 = cmd1.ExecuteReader();
+                    SqliteDataReader reader1 = cmd1.ExecuteReader();
                     if (reader1.Read())
                     {
                         rootDir = reader1.GetString(0);
@@ -39,13 +39,13 @@ namespace MyModifiedIconOverlayHandler
                         || path.StartsWith(Path.Combine(rootDir, @"共享空间\")))
                     {
                         string sql = "SELECT lastModified FROM file_status WHERE filePath = @fp";
-                        SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+                        SqliteCommand cmd = new SqliteCommand(sql, conn);
                         cmd.Parameters.AddRange(new[]
                             {
-                                new SQLiteParameter("@fp", path)
+                                new SqliteParameter("@fp", path)
                             });
 
-                        SQLiteDataReader reader = cmd.ExecuteReader();
+                        SqliteDataReader reader = cmd.ExecuteReader();
 
                         if (reader.Read())
                         {
