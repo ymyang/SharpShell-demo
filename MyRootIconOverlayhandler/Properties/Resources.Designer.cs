@@ -63,9 +63,9 @@ namespace MyRootIconOverlayhandler.Properties {
         /// <summary>
         ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon yliyun_48 {
+        internal static System.Drawing.Icon yliyun {
             get {
-                object obj = ResourceManager.GetObject("yliyun_48", resourceCulture);
+                object obj = ResourceManager.GetObject("yliyun", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }

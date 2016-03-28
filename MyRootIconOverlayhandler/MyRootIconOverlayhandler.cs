@@ -54,7 +54,7 @@ namespace MyRootIconOverlayhandler
 
         protected override System.Drawing.Icon GetOverlayIcon()
         {
-            return Properties.Resources.yliyun_48;
+            return Properties.Resources.yliyun;
         }
 
         protected override int GetPriority()
